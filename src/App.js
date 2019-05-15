@@ -23,8 +23,8 @@ class App extends Component {
     while(inList){
       random = contacts[Math.floor(Math.random() * contacts.length)];
       inList = false;
-      this.state.contactsList.forEach(e=>{
-        if(e.name === random.name){
+      this.state.contactsList.forEach(e => {
+        if(e.name === random.name) {
           inList = true;
         }
       });
